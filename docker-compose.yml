@@ -1,0 +1,8 @@
+services:
+  hospital-bulk-api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - HOSPITAL_API_BASE_URL=https://hospital-directory.onrender.com
+    restart: unless-stopped
